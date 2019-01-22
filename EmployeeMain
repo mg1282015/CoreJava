@@ -1,0 +1,11 @@
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee e = new Employee(1, "Madhu", "San Jose", "CA", 94025, 1408234567, "QA", 1, "mg1282015@gmail.com", 100,
+				5000, 1000);
+		System.out.println(e.totalSalary());
+
+	}
+
+}
