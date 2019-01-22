@@ -1,0 +1,145 @@
+/*
+  Create a class Employee.java with attributes empNo, empName, address, State,
+zipCode, phone, designation (manager, lead, analyst) , experienceinYears,
+emailAddress, basic, hra, bonus (% of basic). Choose appropriate data types and
+create a constructer, getters &amp; setters for the attributes. Also create a method to
+return the total salary (basic + hra + (bonus/100)*basic)
+ */
+
+public class Employee {
+	private int empNo;
+	private String empName;
+	private String address;
+	private String State;
+	private long zipcode;
+	private long phone;
+	private String designation;
+	private double experienceinYears;
+	private String emailAddress;
+	private double basic;
+	private double hra;
+	private double bonus;
+
+	public void setEmpNo(int empNo) {
+		this.empNo = empNo;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public void setState(String state) {
+		State = state;
+	}
+
+	public void setZipcode(long zipcode) {
+		this.zipcode = zipcode;
+	}
+
+	public void setPhone(long phone) {
+		this.phone = phone;
+	}
+
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
+
+	public void setExperienceinYears(double experienceinYears) {
+		this.experienceinYears = experienceinYears;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public void setBasic(double basic) {
+		this.basic = basic;
+	}
+
+	public void setHra(double hra) {
+		this.hra = hra;
+	}
+
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+
+	/*
+	 * public void setEmp(Employee emp) { this.emp = emp; }
+	 */
+
+	public int getEmpNo() {
+		return empNo;
+	}
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public String getState() {
+		return State;
+	}
+
+	public long getZipcode() {
+		return zipcode;
+	}
+
+	public long getPhone() {
+		return phone;
+	}
+
+	public String getDesignation() {
+		return designation;
+	}
+
+	public double getExperienceinYears() {
+		return experienceinYears;
+	}
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public double getBasic() {
+		return basic;
+	}
+
+	public double getHra() {
+		return hra;
+	}
+
+	public double getBonus() {
+		return bonus;
+	}
+
+	public Employee(int empNo, String empName, String address, String state, long zipcode, long phone,
+			String Designation, int experienceinYears, String emailAddress, double hra, double basic, double bonus) {
+		this.empNo = empNo;
+		this.empName = empName;
+		this.address = address;
+		this.State = state;
+		this.zipcode = zipcode;
+		this.phone = phone;
+		this.designation = Designation;
+		this.experienceinYears = experienceinYears;
+		this.emailAddress = emailAddress;
+		this.hra = hra;
+		this.basic = basic;
+		this.bonus = bonus;
+	}
+
+	public double totalSalary() {
+		double totalSalary = (basic + hra + (bonus / 100) * basic);
+
+		return totalSalary;
+	}
+
+}
