@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+
+
+/*Write a program to a specified number of generate fibonacci series.
+Note: Read the required count from the keyboard*/
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int firstNum = 0;
+		int secNum = 1;
+		int next; //Holds the next value of Fibonacci
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number you want the count of fibonacci series");
+		
+		
+		int numberOfTerms = sc.nextInt();
+		System.out.print(firstNum+ ","+ secNum );
+		
+		for (int count=3; count<=numberOfTerms; count++) {
+			
+			next=firstNum+secNum;
+			
+			
+			System.out.print("," +next);
+			
+			firstNum = secNum;
+			secNum = next;
+			
+			
+		}
+		sc.close();
+		
+		
+
+	}
+
+}
